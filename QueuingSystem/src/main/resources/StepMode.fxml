@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="517.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.poly.smo.graphics.StepModeController">
+   <children>
+      <TableView fx:id="sourceStateTable" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="283.0">
+        <columns>
+          <TableColumn fx:id="sourceN" prefWidth="75.0" text="Source" />
+          <TableColumn fx:id="sourceTime" prefWidth="75.0" text="Time" />
+            <TableColumn fx:id="sourceNumberOfRequests" prefWidth="131.0" text="Number of Requests" />
+        </columns>
+      </TableView>
+      <TableView fx:id="deviceStateTable" layoutX="313.0" layoutY="14.0" prefHeight="200.0" prefWidth="152.0">
+        <columns>
+          <TableColumn fx:id="deviceNumber" prefWidth="75.0" text="Device" />
+          <TableColumn fx:id="deviceTime" prefWidth="75.0" text="Time" />
+        </columns>
+      </TableView>
+      <TableView fx:id="bufferStateTable" layoutX="14.0" layoutY="248.0" prefHeight="200.0" prefWidth="283.0">
+        <columns>
+          <TableColumn fx:id="bufferPlace" prefWidth="53.0" text="Buffer" />
+          <TableColumn fx:id="bufferTime" prefWidth="57.0" text="Time" />
+            <TableColumn fx:id="sourceNumberInBuffer" prefWidth="90.0" text="Source N" />
+            <TableColumn fx:id="requestNumberInBuffer" prefWidth="82.0" text="Request N" />
+        </columns>
+      </TableView>
+      <Label fx:id="message" layoutX="313.0" layoutY="248.0" prefHeight="63.0" prefWidth="152.0" text="Message" />
+      <Label fx:id="stepNumber" layoutX="313.0" layoutY="375.0" prefHeight="63.0" prefWidth="152.0" text="Step" />
+      <Button fx:id="previous" layoutX="14.0" layoutY="461.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="93.0" text="Previous" />
+      <Button fx:id="next" layoutX="204.0" layoutY="461.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="93.0" text="Next" />
+   </children>
+</AnchorPane>

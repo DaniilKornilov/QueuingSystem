@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="514.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.poly.smo.graphics.AutoModeController">
+   <children>
+      <TableView fx:id="sourceTable" layoutX="177.0" layoutY="14.0" prefHeight="456.0" prefWidth="707.0">
+         <columns>
+            <TableColumn fx:id="sourceNumber" prefWidth="64.0" text="Source N" />
+            <TableColumn fx:id="requestsNumber" prefWidth="64.0" text="Requests" />
+            <TableColumn fx:id="refuseProbability" prefWidth="110.0" text="Refuse probability" />
+            <TableColumn fx:id="systemTime" prefWidth="104.0" text="System time" />
+            <TableColumn fx:id="bufferTime" prefWidth="78.0" text="Buffer time" />
+            <TableColumn fx:id="processingTime" prefWidth="111.0" text="Processing time" />
+            <TableColumn fx:id="dBuffer" prefWidth="70.0" text="D buffer" />
+            <TableColumn fx:id="dProcessing" prefWidth="99.0" text="D processing" />
+         </columns></TableView>
+      <TableView fx:id="deviceTable" layoutX="14.0" layoutY="14.0" prefHeight="456.0" prefWidth="153.0">
+         <columns>
+            <TableColumn fx:id="deviceNumber" prefWidth="75.0" text="Device N" />
+            <TableColumn fx:id="usingCoefficient" prefWidth="75.0" text="Using coef" />
+         </columns></TableView>
+      <Label fx:id="autoMessage" layoutX="14.0" layoutY="483.0" prefHeight="17.0" prefWidth="864.0" />
+   </children>
+</AnchorPane>
